@@ -32,7 +32,7 @@ auth_token = # YOUR TWILIO TOKEN
 
 client = Client(account_sid, auth_token)
 
-# Koordinatlar
+# Static Coordinates
 x = 41.025782
 y = 28.931487
 button_count = 0
@@ -50,7 +50,7 @@ try:
          if button_state == False: #Pressed ?
             # Count it if it's pressed.
             button_count = button_count+1
-            #Bastigi zamani al 
+            
             start_time.append(time.time()) 
             print(start_time)
             if button_count==3:
